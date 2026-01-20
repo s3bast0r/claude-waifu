@@ -1,0 +1,66 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# front folder
+/front
+
+# content files (not needed for runtime)
+posts.txt
+posts_waifu.txt
+
+# unused/duplicate styles
+/styles/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# optional: keep one lock file (uncomment if you prefer npm)
+# pnpm-lock.yaml
+# or if you prefer pnpm, uncomment:
+# package-lock.json
