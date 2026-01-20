@@ -143,10 +143,7 @@ export function WaifuTracker() {
   }, [tokenData])
 
   const addMessage = useCallback((newEmotion: Emotion, text: string) => {
-    const latestPrice = tokenDataRef.current?.price ?? 0
-    const priceTag = formatPrice(latestPrice)
-    const messageText = `[${priceTag}] ${text}`
-    setMessages((prev) => [...prev.slice(-9), { text: messageText, emotion: newEmotion, timestamp: new Date() }])
+    setMessages((prev) => [...prev.slice(-9), { text, emotion: newEmotion, timestamp: new Date() }])
   }, [])
 
   const generateMessage = useCallback(
@@ -505,10 +502,6 @@ export function WaifuTracker() {
                 <div>
                   <div className="text-sm text-muted-foreground mb-1">Address</div>
                   <div className="text-sm font-mono text-foreground break-all">{truncateCA(tokenData.address)}</div>
-                </div>
-                <div>
-                  <div className="text-sm text-muted-foreground mb-1">Ticker</div>
-                  <div className="text-sm font-bold text-foreground">{tokenData.symbol || "N/A"}</div>
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground mb-1">Supply</div>
