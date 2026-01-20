@@ -71,7 +71,7 @@ export function Navbar() {
           {/* Right External Links - Icons Only */}
           <div className="flex items-center gap-2">
             <a
-              href="https://github.com"
+              href="https://github.com/s3bast0r/claude-waifu"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex"
